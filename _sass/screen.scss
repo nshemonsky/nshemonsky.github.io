@@ -1,0 +1,97 @@
+@import 'compass/reset';
+@import 'compass/css3/border-radius';
+@import 'compass/css3/animation';
+@import 'compass/css3/transition';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200,300);
+
+html,
+body {
+  height: 100%;
+}
+
+// ----- Colors ---------------------------------------------------------------
+$blue02: #000000;
+$blue01: #000D10;
+$blue0: #002B36;
+$blue1: #004454;
+$blue2: #005A6F;
+
+// color scheme:
+// http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
+// ----------------------------------------------------------------------------
+
+.pane {
+  height: 100%;
+
+  &.landing { background: $blue1; }
+}
+
+.vcenter {
+  text-align: center;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.vcenter-target {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a.icon {
+  margin: 15px;
+  padding: 8px;
+  @include border-radius(8px);
+ 
+  &:hover {
+    background: rgba(0,0,0,0.2);
+  }
+}
+
+a.btn {
+  margin: 15px;
+  padding: 5px;
+  @include border-radius(8px);
+  color: $blue1;
+
+  &:hover {
+    background: rgba(0,0,0,0.2);
+    color: #fff
+  }
+}
+
+
+// ----- Typography -----------------------------------------------------------
+.pane {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 300;
+  a.icon { color: #fff; }
+
+  @media(max-width: 768px) {
+    .title { font-size: 3rem; }
+    .subtitle { font-size: 1.25rem; }
+    .links { font-size: 1.5rem; }
+  }
+  @media(min-width: 1024px) {
+    .title { font-size: 4rem; }
+    .subtitle { font-size: 1.25em; }
+    .links { font-size: 1.75rem; }
+  }
+  @media(min-width: 1080px) {
+    .title { font-size: 5rem; }
+    .subtitle { font-size: 1.75rem; }
+    .links { font-size: 2rem; }
+  }
+  @media(min-width: 1200px) {
+    .title { font-size: 6rem; }
+    .subtitle { font-size: 1.75rem; }
+    .links { font-size: 2.5rem; }
+  }
+}
