@@ -21,12 +21,6 @@ html(lang="en")
     
     link(rel="canonical", href="https://www.nickshemonsky.com/")
 
-    script
-      :coffee
-        # Force redirect to HTTPS
-        if window.location.hostname != 'localhost' and window.location.protocol != 'https:'
-          window.location.protocol = 'https'
-
   body
     .landing.pane.vcenter
       .vcenter-target
