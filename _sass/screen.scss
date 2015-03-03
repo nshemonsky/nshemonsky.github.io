@@ -42,16 +42,6 @@ $blue2: #005A6F;
   vertical-align: middle;
 }
 
-a.icon {
-  margin: 15px;
-  padding: 8px;
-  @include border-radius(8px);
- 
-  &:hover {
-    background: rgba(0,0,0,0.2);
-  }
-}
-
 a.btn {
   margin: 15px;
   padding: 5px;
@@ -60,7 +50,8 @@ a.btn {
 
   &:hover {
     background: rgba(0,0,0,0.2);
-    color: #fff
+    color: #fff;
+    transition: 0.3s;
   }
 }
 
@@ -72,7 +63,6 @@ a.btn {
   line-height: 1.5;
   text-align: center;
   font-weight: 300;
-  a.icon { color: #fff; }
 
   @media(max-width: 768px) {
     .title { font-size: 3rem; }
