@@ -1,5 +1,5 @@
 all:
-	@echo "Please choose one of 'install', 'jade', or 'compass', 'coffee', or 'serve'."
+	@echo "Please choose one of 'install', 'jade', or 'compass', or 'serve'."
 
 install:
 	gem install bundler
@@ -15,5 +15,5 @@ serve:
 	@if which python3; then python3 -m http.server; else python -m SimpleHTTPServer; fi
 
 
-.PHONY: all install serve build compass coffee
+.PHONY: all install jade compass serve 
 
