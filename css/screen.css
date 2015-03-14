@@ -99,7 +99,7 @@ body {
 
 /* line 44, ../_sass/screen.scss */
 a.btn {
-  margin: 15px;
+  margin: 10px;
   padding: 5px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -112,8 +112,9 @@ a.btn:hover {
   color: #fff;
   transition: 0.2s;
 }
-/* line 56, ../_sass/screen.scss */
-a.btn i.fa {
+
+/* line 57, ../_sass/screen.scss */
+i.fa {
   width: 20px;
 }
 
@@ -132,52 +133,36 @@ a.btn i.fa {
   }
   /* line 71, ../_sass/screen.scss */
   .pane .subtitle {
-    font-size: 1.25rem;
-  }
-  /* line 72, ../_sass/screen.scss */
-  .pane .links {
     font-size: 1.5rem;
   }
 }
-@media (min-width: 1024px) {
-  /* line 75, ../_sass/screen.scss */
+@media (min-width: 768px) {
+  /* line 74, ../_sass/screen.scss */
   .pane .title {
     font-size: 4rem;
   }
-  /* line 76, ../_sass/screen.scss */
+  /* line 75, ../_sass/screen.scss */
   .pane .subtitle {
-    font-size: 1.5rem;
-  }
-  /* line 77, ../_sass/screen.scss */
-  .pane .links {
     font-size: 1.75rem;
   }
 }
-@media (min-width: 1080px) {
-  /* line 80, ../_sass/screen.scss */
+@media (min-width: 984px) {
+  /* line 78, ../_sass/screen.scss */
   .pane .title {
     font-size: 5rem;
   }
-  /* line 81, ../_sass/screen.scss */
+  /* line 79, ../_sass/screen.scss */
   .pane .subtitle {
-    font-size: 1.75rem;
-  }
-  /* line 82, ../_sass/screen.scss */
-  .pane .links {
     font-size: 2rem;
   }
 }
 @media (min-width: 1200px) {
-  /* line 85, ../_sass/screen.scss */
+  /* line 82, ../_sass/screen.scss */
   .pane .title {
     font-size: 6rem;
   }
-  /* line 86, ../_sass/screen.scss */
+  /* line 83, ../_sass/screen.scss */
   .pane .subtitle {
-    font-size: 2rem;
-  }
-  /* line 87, ../_sass/screen.scss */
-  .pane .links {
     font-size: 2.25rem;
   }
 }
